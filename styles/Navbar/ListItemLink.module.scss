@@ -1,17 +1,19 @@
 li {
-  a,
-  button {
+  a {
+    position: relative;
     font-size: 1.1rem;
     text-decoration: none;
     color: #333;
     transition: color 200ms ease;
-    &:hover {
-      color: blue;
+    &:focus-visible {
+      h2,
+      h3,
+      span {
+        color: #333;
+        font-weight: 700;
+        text-decoration: underline;
+      }
     }
-  }
-  button {
-    background: none;
-    cursor: pointer;
   }
 
   h2,
